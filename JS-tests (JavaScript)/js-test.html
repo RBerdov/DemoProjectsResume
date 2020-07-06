@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>JS Test</title>
+<!— подключаем стили Mocha, для отображения результатов —>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+<!— подключаем библиотеку Mocha —>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+<!— подключаем chai —>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+<!— настраиваем Mocha: предстоит BDD-тестирование —>
+<script>
+mocha.setup('bdd');
+</script>
+<!— в chai есть много всего, выносим assert в глобальную область —>
+<script>
+var assert = chai.assert;
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	//1
+	function findFactorial(number){
+	 return (number !== 1) ? number * findFactorial(number - 1) : 1;
+}
+
+	//2
+function findLongest(str){
+	let longestWord = str.split(' ').reduce(function(longest, currentWord) {
+    	return currentWord.length > longest.length ? currentWord : longest;
+  	}, "");
+  return longestWord.length;
+}
+
+	//3
+ function findLargestOfArrays(arr) {
+   let largest=[];
+   for(let i=0;i<arr.length;i++){
+    let s=0;
+    for(let j=0;j<=arr[i].length;j++){
+      if(arr[i][j]>s){
+        s=arr[i][j];
+
+      }
+    }
+    largest.push(s);
+   }
+ return largest + ".";
+}
+
+	//4
+function cutString(str, maxLength){
+	if(str.length > maxLength){
+		let a = str.length - maxLength;
+		return str.substr(0, str.length - a) + '...'
+	}
+
+}
+
+	//5
+function changeStringToUpperCase(str){
+	return str.split(/\s+/).map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
+}
+
+	//6
+function combineArrays(arr1, arr2, n){
+	arr1 = arr1.join(",");
+	arr2.splice(n, 0, arr1);
+
+	return arr2;
+}
+
+
+	//7
+function deleteFalsy(arr) {
+	let arr2 = [];
+
+	arr.forEach(function(item) {
+		if (item !== null && item !== "" && item !== '' && item !== 0 && item !== false){
+			arr2.push(item);
+		}
+	});
+
+	return arr2 + ".";
+}
+ //8
+function checkString(arr) {
+	str1 = arr[0].toString().toLowerCase();
+	str2 = arr[1].toString().toLowerCase();
+
+	for (let i = 0; i < str2.length; i++) {
+		if (str1.indexOf(str2[i]) !== -1) {
+			f = true;
+		} 
+		else {
+			f = false;
+			break;
+		}
+	}
+
+	return f;
+} 
+
+	//9
+function splitArray(arr, size) {
+	let arr2 = [];
+
+	for (let i = 0; i < Math.ceil(arr.length/size); i++){
+		arr2[i] = arr.slice( (i * size), (i * size) + size);
+	}
+
+	return arr2 + ".";
+}
+
+	//10
+function createRecurMass(arr, n) {
+	if (n === 1) {
+		arr.push(n);
+		return arr;
+	}
+ 	else {
+		arr.push(n);
+		return createRecurMass(arr, n - 1);
+	}
+}
+
+	//11
+function sumElements(arr){
+	let a = arr[0];
+	let b = arr[1];
+	let sum = a + b;
+	if (a > b) {
+		let i = b;
+		for (i; i < a; i++) {
+			sum = sum + i;
+		}
+
+		return sum - 1;
+
+	}
+
+	else{
+		let i = a;
+		for (i; i < b; i++) {
+			sum = sum + i;
+		}
+		return sum - 1;
+	}
+
+}
+
+  //12
+function getUniques(arr1, arr2){
+	let arr = arr1.concat(arr2);
+	let arr3 = [];
+	for (let el of arr) {
+    	if (!arr3.includes(el)) {
+      		arr3.push(el);
+    	}
+
+  	}  
+	return arr3 + ".";
+}
+
+	//13
+function deleteItemsFromArr(arr, ...rest) {
+	for (let i = 1; i < arguments.length; i++) {
+		arr.splice(arr.indexOf(arguments[i]), 1)
+	}
+
+	return arr;
+}
+
+	//14
+function whatIsInAName(arr_obj, obj) {
+	let new_arr = [];
+
+	for (let i = 0; i < arr_obj.length; i++) {
+		if (arr_obj[i].apple === obj.apple && arr_obj[i].bat === obj.bat) {
+			new_arr.push(arr_obj[i]);
+		}
+	}
+
+	return new_arr + ".";
+}
+
+
+	//15
+function convertToSpinalCase(str) {
+  	let spinal = str.replace(/(?!^)([А-Я])/g, ' $1')
+                	.replace(/[_\s]+(?=[а-яА-Я])/g, '-').toLowerCase();
+  	return spinal; 
+}
+
+	//16
+function replaceWord(str, a, b){
+	if (a.toUpperCase() === a){
+		let newstr = str.replace(a, b.toUpperCase());
+		return newstr;
+	}
+
+	else{
+		let newstr = str.replace(a, b);
+		return newstr;
+	}
+	
+}
+
+	//17
+function findMissing(str) {
+	let array = str.split('');
+
+	for (let i = 1; i < array.length; i++) {
+		let prev = array[i - 1].charCodeAt();
+		let current = array[i].charCodeAt();
+
+		if (current - prev !== 1) {
+			return String.fromCharCode(prev + 1);
+		}
+	}	
+
+	return "undeﬁned";
+}
+
+	//18
+function filterArrays(arr, ...rest){
+	let simpleArr = convertToSimpleArray(arguments);
+	let res = [];
+	for (let i of simpleArr) {
+    	if (!res.includes(i)) {
+     		res.push(i);
+    	}
+  	}
+
+  	return res + ".";
+
+}
+
+ 	//19
+ function replaceSymbols(str){
+ 	if(str.match(/\&/) !== null){
+ 		sym = str.match(/\&/).toString(16);
+ 		str = str.replace(str.match(/\&/), str.match(/\&/).toString(16).charCodeAt(0));
+ 	}
+ 	if(str.match(/\</) !== null){
+ 		sym = str.match(/\</).toString(16);
+ 		str = str.replace(str.match(/\</), str.match(/\</).toString(16).charCodeAt(0));
+ 	}
+ 	if(str.match(/\>/) !== null){
+ 		sym = str.match(/\>/).toString(16);
+ 		str = str.replace(str.match(/\>/), str.match(/\>/).toString(16).charCodeAt(0));
+ 	}
+ 	if(str.match(/\"/) !== null){
+ 		sym = str.match(/\"/).toString(16);
+ 		str = str.replace(str.match(/\"/), str.match(/\"/).toString(16).charCodeAt(0));
+ 	}
+ 	if(str.match(/\'/) !== null){
+ 		sym = str.match(/\'/).toString(16);
+ 		str = str.replace(str.match(/\'/), str.match(/\'/).toString(16).charCodeAt(0));
+ 	}
+
+ 	return str;
+ }
+
+
+	//20
+function sumAllSimple(n){
+	let sum = 0;
+	for (let i = 0; i <= n; i++) {
+		sum = sum + i;
+	}
+	return sum;
+}
+
+	//21
+function dropElements(arr, func) {
+	let filt = arr.filter(func);
+	return filt + ".";
+}
+
+	//22
+function convertToSimpleArray(arr)
+{
+	let res=[];
+	for (let i=0; i<arr.length; i++){
+		if (!Array.isArray(arr[i])){
+			res.push(arr[i]);
+		}
+		else{
+			res=res.concat(convertToSimpleArray(arr[i]));
+		}
+ 	  
+	}
+	
+	return res + ".";
+}
+
+
+	//23
+function sumTwoArgs(a, b){
+	if(arguments.length === 2){
+		let sum = a + b;
+		return sum;
+	}
+
+	else{
+		return getSecondArg(a);
+	}
+}
+
+function getSecondArg(a){
+	let b = prompt('Введите второй аргумент', 2);
+	let sum = a + parseInt(b, 10);
+	return sum;
+}
+
+
+
+
+</script>
+<script src="js/js-test.js" charset="utf-8"></script>
+<div class="mocha" id="mocha"></div>
+<!— запустить тесты! —>
+<script>
+mocha.run();
+</script>
+</body>

@@ -1,0 +1,13 @@
+.item-to-add__input{
+    width: auto;
+    flex-grow: 1;
+    margin-right: 3px;
+    margin-top: 10px;
+    
+  }
+
+  .add-button{
+      width: auto;
+      margin-top: 10px;
+      
+  }

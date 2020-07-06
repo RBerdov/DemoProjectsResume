@@ -1,0 +1,2322 @@
+*{
+	margin: 0;
+}
+body{
+	width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2F343A;
+    align-items: center;
+    max-width: 1920px;
+}
+
+.container {
+	padding-left: 103px;
+	padding-right: 103px;
+}
+
+.header{
+	width: 100%;
+	height: 7%;
+	position: absolute;
+	background: #C8A35F;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+
+}
+
+.languages{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.languages__content{
+	margin-right: 10%;
+	font-family: 'Roboto', sans-serif;
+	font: 14px sans-serif;
+	color: white;
+	opacity: 50%;
+	cursor: pointer;
+	text-transform: uppercase;
+	-webkit-transition: top 1s ease-out 0.5s;
+
+
+}
+
+:hover{
+	opacity: 100%;
+
+
+}
+
+.header__content{
+	font-family: 'Roboto', sans-serif;
+	font: 14px sans-serif;
+	color: white;
+}
+
+.menu{
+	width: 100%;
+	position: absolute;
+	height: 20%;
+	background-color: #2F343A;
+	left: 0%;
+	top: 7%;
+
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.main{
+	width: 100%;
+	position: absolute;
+	top: 27%;
+	height: 93%;
+	background-image: url(../img/background.png);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}
+
+.transportation-info{
+	border: 1px solid #C8A35F;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.transportation-info__title{
+	text-align: center;
+	padding: 2%;
+	color: white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	text-transform: uppercase;
+}
+
+.transportation-info__text{
+	text-align: center;
+	padding: 2%;
+	padding-left: 15%;
+	padding-right: 15%;
+	color: white;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.company{
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.company__img{
+	margin-right: -6%;
+	padding-right: 4%;
+	cursor: pointer;
+}
+
+.company__line{
+	width: 0.3%;
+	height: 70px;
+	background-color: white;
+
+}
+
+.menu__label{
+	color: white;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.points{
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+
+
+.eurvans{
+	width: 100%;
+	position: absolute;
+	top: 120%;
+	height: 90%;
+	background-color: #2F343A;	
+}
+
+.infopanel_left{
+	position: relative;
+	height: 100%;
+	width: 40%;
+	float: left;
+	background-color: #393F47;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.eurotransportation{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	float: right;
+}
+
+.eurotransportation__line{
+	background-color: #C8A35F;
+	width: 90px;
+	height: 6px;
+}
+
+.eurotransportation__title{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	padding-top: 10%;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.eurotransportation__text{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	padding-top: 10%;
+	float: left;
+
+	color: #FFFFFF;
+
+}
+
+.eurotransportation__button{
+	text-align: center;
+	width: 220px;
+	height: 55px;
+	background: #C8A35F;
+	outline: none;
+	margin-top: 10%;
+	border: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	cursor: pointer;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.infopanel_right{
+	position: relative;
+	height: 100%;
+	width: 40%;
+	float: right;
+	background-color: #393F47;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;	
+}
+
+.truck-gallery{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	float: left;
+}
+
+.truck-gallery__next{
+	width: 20%;
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-align: center;
+	text-transform: uppercase;
+
+	color: #C8A35F;
+}
+
+.truck-gallery__nextarrow{
+	cursor: pointer;
+	margin-left: 50%;
+	margin-top: -25px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-align: center;
+
+	color: #C8A35F;
+}
+
+.truck-gallery__previousarrow{
+	cursor: pointer;
+	margin-right: 50%;
+	margin-top: -25px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-align: center;
+
+	color: #C8A35F;
+}
+
+.truck-gallery__picture{
+	float: left;
+	margin-left:  -140%;
+	width: 445px;
+	height: 266px;
+	background-image: url(../img/truck.png);
+}
+
+
+.services{
+	width: 70%;
+	position: absolute;
+	left: 17%;
+	top: 210%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.services__line{
+	background-color: #C8A35F;
+	width: 90px;
+	height: 6px;
+}
+
+.services__title{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 49px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.service-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.service-element{
+	background-color: #393F47;
+	width: 220px;
+	height: 166px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid #2F343A;
+	cursor: pointer;
+	-webkit-transition: top 1s ease-out 0.5s;
+}
+
+.service-element:hover{
+	background-color: #C8A35F;
+	width: 220px;
+	height: 166px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+.service-element__icon{
+	display: flex;
+	align-items: center;
+    align-content: center;
+    justify-content: space-around;
+	width: 70px;
+	height: 70px;
+	-webkit-transition: top 1s ease-out 0.5s;
+}
+
+.service-element:hover .service-element__icon{
+	display: flex;
+	align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    border-radius: 100px;
+    background-color: white;
+    cursor: pointer;
+	width: 70px;
+	height: 70px;
+}
+
+.service-element__plane{
+	background-image: url(../img/plane.png);
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	-webkit-transition: top 1s ease-out 0.5s;
+}
+
+.service-element:hover .service-element__plane{
+	background-image: url(../img/plane_black.png);
+	width: 30px;
+	height: 30px;
+}
+
+.service-element__text{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.about{
+	width: 100%;
+	position: absolute;
+	top: 330%;
+	height: 90%;
+	background-color: #393F47;
+}
+
+.about-company_left{
+	position: relative;
+	height: 100%;
+	width: 40%;
+	float: left;
+	background-color: #2F343A;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.info-company{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+	float: right;
+}
+
+.info-company__title{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	padding-top: 10%;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+}
+
+.info-company__text{
+	width: 130%;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 28px;
+	padding-top: 10%;
+	float: left;
+
+	color: #FFFFFF;
+}
+
+.about-company_right{
+	position: relative;
+	height: 100%;
+	width: 40%;
+	float: right;
+	background-color: #2F343A;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;	
+}
+
+.stats{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	float: left;
+	height: 40%;
+	margin-left: -10%;
+
+}
+
+.stats-element{
+	width: 165px;
+	height: 125px;
+	background-color: white;
+	border: 1px solid #C8A35F;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+
+}
+
+.stats-element__number{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	text-align: center;
+	margin-top: 10%;
+
+	color: #2F343A;
+}
+
+.stats-element__maintext{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 0.05em;
+
+
+	color: #000000;
+}
+
+.stats-element__sec-text{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 10%;
+
+	color: #000000;
+}
+
+.stats-element__pic{
+ 	width: 165px;
+	height: 125px;
+	border: 1px solid #C8A35F;
+
+}
+
+.map{
+	width: 100%;
+	position: absolute;
+	top: 430%;
+	height: 60%;
+	background-image: url(../img/maps.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.footer{
+	width: 100%;
+	height: 15%;
+	position: absolute;
+	background: #C8A35F;
+	top: 490%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	flex-wrap: wrap;
+
+}
+
+.contacts{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.contacts__adress{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #F2F2F2;
+	opacity: 0.8;
+}
+
+.contacts__email{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #2F343A;
+}
+
+.contacts__phone{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+
+	color: #F2F2F2;
+}
+
+.developer{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: right;
+	margin-top: 24px;
+	text-decoration-line: underline;
+
+
+	color: #2F343A;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 1520px) and (max-width : 1920px) {
+	.header{
+		height: 5%;
+	}
+	.menu{
+		top: 5%;
+		height: 10%; 
+	}
+
+	.languages__content{
+    	margin-right: 10%;
+    	font-family: 'Roboto', sans-serif;
+    	font: 18px sans-serif;
+    	color: white;
+    	opacity: 50%;
+    	cursor: pointer;
+    	text-transform: uppercase;
+    	-webkit-transition: top 1s ease-out 0.5s;
+	}
+
+	.header__content{
+    	font-family: 'Roboto', sans-serif;
+    	font: 18px sans-serif;
+    	color: white;
+	}
+
+	.company__img{
+		padding-right: 0%;
+		
+	}
+
+	.menu__label {
+    	color: white;
+    	cursor: pointer;
+    	text-transform: uppercase;
+    	font-size: 20px;
+	}
+
+	.main{
+		top: 15%;
+		height: 70%;
+	}
+
+	.transportation-info__title{
+    	text-align: center;
+    	padding: 2%;
+    	color: white;
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: bold;
+    	font-size: 84px;
+    	text-transform: uppercase;
+	}
+
+	.transportation-info__text{
+    	text-align: center;
+    	padding: 2%;
+    	padding-left: 15%;
+    	padding-right: 15%;
+    	color: white;
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 28px;
+	}
+
+	.eurvans{
+		top: 75%;
+    	height: 60%;
+	}
+
+	.eurotransportation__title {
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: bold;
+    	font-size: 60px;
+    	padding-top: 10%;
+    	text-transform: uppercase;
+    	color: #FFFFFF;
+	}
+
+	.eurotransportation__text{
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 28px;
+    	line-height: 30px;
+    	padding-top: 10%;
+    	float: left;
+    	color: #FFFFFF;
+	}
+
+	.eurotransportation__button{
+    	text-align: center;
+    	width: 370px;
+    	height: 95px;
+    	background: #C8A35F;
+   	 	outline: none;
+    	margin-top: 10%;
+    	border: none;
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 28px;
+    	cursor: pointer;
+    	text-transform: uppercase;
+    	color: #FFFFFF;
+	}
+
+	.truck-gallery__picture{
+		margin-left: -111%;
+    	width: 545px;
+    	height: 366px;
+    	background-size: cover;
+	}
+
+	.truck-gallery__next {
+    	width: 10%;
+    	font-size: 24px;
+	}
+
+	.truck-gallert__nextarrow{
+		font-size: 60px;
+	}
+
+	.truck-gallert__previousarrow{
+		font-size: 60px;
+	}
+
+	.services{
+		top: 145%;
+    	height: 85%;
+	}
+
+	.services__title{
+		font-size: 60px;
+	}
+
+	.service-element{
+		width: 320px;
+    	height: 246px;
+	}
+
+	.service-element:hover{
+		width: 320px;
+    	height: 246px;
+	}
+
+	.service-element:hover .service-element__icon{
+		width: 80px;
+    	height: 80px;
+	}
+
+	.service-element__plane{
+		width: 50px;
+    	height: 50px;
+    	background-size: cover;
+	}
+
+	.service-element:hover .service-element__plane{
+		width: 50px;
+    	height: 50px;
+    	background-size: cover;
+	}
+
+	.service-element__text{
+		font-size: 22px;
+    	line-height: 22px;
+	}
+
+	.about{
+		top: 240%;
+		height: 45%;
+	}
+
+	.info-company__title{
+		font-size: 50px;
+	}
+
+	.info-company__text{
+		font-size: 26px;
+    	line-height: 32px;
+	}
+
+
+	.stats{
+		width: 85%;
+		height: 0%;
+		margin-right: 25%;
+	}
+
+	.stats-element{
+    	width: 205px;
+    	height: 155px;
+	}	
+
+	.stats-element__number{
+		font-size: 62px;
+	}
+
+	.stats-element__maintext{
+		font-size: 26px;
+	}
+
+	.stats-element__sec-text{
+		font-size: 20px;
+	}
+
+	.stats-element__pic{
+    	width: 205px;
+    	height: 155px;
+    	border: 1px solid #C8A35F;
+	}
+
+	.map{
+		top: 300%;
+    	height: 40%;
+	}
+
+	.footer{
+		top: 340%;
+	}
+
+	.contacts__adress{
+		font-size: 24px;
+    	line-height: 26px;
+	}
+
+	.contacts__email{
+		font-size: 24px;
+    	line-height: 26px;
+	}
+
+	.contacts__phone {
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 24px;
+    	line-height: 26px;
+    	color: #F2F2F2;
+	}
+
+	.developer{
+    	font-family: Roboto;
+    	font-style: normal;
+    	font-weight: normal;
+    	font-size: 24px;
+    	line-height: 16px;
+    	text-align: right;
+    	margin-top: 24px;
+    	text-decoration-line: underline;
+    	color: #2F343A;
+	}
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1520px){
+	.stats {
+		height: 0%;
+	}
+}
+
+@media only screen and (min-width: 860px) and (max-width: 1024px) {
+
+	.menu__label{
+		font-size: 12px;
+	}
+
+	.company{
+		width: 43%;
+	}
+
+	.points{
+		width: 43%;
+	}
+
+
+	.company__line{
+		height: 50px;
+		
+	}
+
+	.transportation-info{
+		width: 80%;
+
+	}
+
+	.eurvans{
+		height: 70%;
+	}
+
+	.eurotransportation__title{
+		
+    	font-size: 30px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 14px;
+	}
+
+	.eurotransportation__button{
+		width: 180px;
+    	
+	}
+
+
+	.truck-gallery__picture{
+		width: 425px;
+    	height: 246px;
+    	background-size: cover;
+	}
+
+
+	.services{
+		top: 193%;
+    	height: 110%;
+	}
+
+	.services__title{
+		font-size: 30px;
+
+	}
+
+	.about{
+		top: 315%;
+    	height: 70%;
+	}
+
+	.info-company__title{
+		font-size: 27px;
+	}
+
+	.info-company__text{
+		font-size: 14px;
+    	line-height: 22px;
+	}
+
+	.map{
+		top: 400%;
+    	
+	}
+
+	.footer{
+		top: 460%;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 860px) {
+
+	.menu__label{
+		font-size: 12px;
+	}
+
+	.company{
+		width: 43%;
+	}
+
+	.points{
+		width: 43%;
+	}
+
+
+	.company__line{
+		height: 50px;
+		
+	}
+
+	.transportation-info{
+		width: 80%;
+
+	}
+
+	.eurotransportation__title{
+		
+    	font-size: 30px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 14px;
+	}
+
+	.eurotransportation__button{
+		width: 180px;
+    	
+	}
+
+
+	.truck-gallery__picture{
+		width: 425px;
+    	height: 246px;
+    	background-size: cover;
+	}
+
+
+	.services{
+		top: 220%;
+    	height: 130%;
+	}
+
+	.services__title{
+		font-size: 30px;
+
+	}
+
+	.about{
+		top: 365%;
+    	height: 90%;
+	}
+
+	.info-company__title{
+		font-size: 27px;
+	}
+
+	.info-company__text{
+		font-size: 14px;
+    	line-height: 22px;
+	}
+
+	.map{
+		top: 465%;
+    	
+	}
+
+	.footer{
+		top: 525%;
+	}
+
+}
+
+@media only screen and (min-width: 640px) and (max-width: 768px) {
+	.header{
+		height: 4%;
+	
+	}
+
+	.languages__content{
+		font-size: 8pt;
+	}
+
+	.header__content{
+		font-size: 8pt;
+	}
+
+	.menu{
+		top: 4%;
+    	align-items: center;
+    	height: 20%;
+    	flex-direction: column;
+	}
+
+	.company{
+		justify-content: space-around;
+    	flex-direction: row;
+    	/* flex-wrap: wrap; */
+    	align-content: flex-start;
+    	/* margin-left: -5%; */
+    	width: 60%;
+	}
+
+	.company__line{
+		height: 40px;
+	}
+
+	.company__img{
+		padding-right: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.menu__label{
+		margin-left: 0%;
+    	font-size: 14px;
+	}
+
+	.points{
+		justify-content: space-around;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	align-content: flex-start;
+    	width: 90%;
+    	
+	}
+	.main{
+		top: 24%;
+		height: 60%;
+	}
+
+	.transportation-info{
+		width: 80%;
+
+	}
+
+	.transportation-info__title{
+		font-size: 40px;
+
+	}
+
+	.main{
+		top: 27%;
+		height: 50%;
+	}
+
+	.transportation-info{
+		width: 80%;
+		
+
+	}
+
+	.eurvans{
+		top: 77%;
+    	height: 110%;
+	}
+
+	.infopanel_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.infopanel_right{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.eurotransportation{
+		float: left;
+    	margin-right: 20%;
+	}
+
+	.transportation-info__title{
+		font-size: 25px;
+	}
+
+	.eurotransportation__title{
+		width: 70%;
+    	font-size: 24px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 14px;
+    	line-height: 18px;
+	}
+
+	.eurotransportation__button{
+		width: 180px;
+    	height: 55px;
+    	font-size: 14px;
+	}
+
+	.truck-gallery{
+		width: 80%;
+    	height: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+    	float: unset;
+	}
+
+	
+	.truck-gallery__picture{
+	    margin-right: 70%;
+    	width: 300px;
+    	height: 181px;
+    	background-size: cover;
+    	margin-left: 0px;
+	}
+
+	.truck-gallery__next{
+		margin-left: 0%;
+    	margin: -2%;
+    	width: 5%;
+	}
+
+	.services{
+		top: 195%;
+    	height: 120%;
+	}
+
+	.services__title{
+		font-size: 30px;
+
+	}
+
+	.service-element__text{
+		font-size: 12px;
+	}
+
+	.service-element{
+		width: 200px;
+    	height: 126px;
+	}
+
+	.service-element:hover{
+		width: 200px;
+    	height: 126px;
+	}
+
+	.service-element:hover .service-element__icon{
+		width: 60px;
+		height: 60px;
+	}
+
+	.service-element__plane{
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+	}
+
+	.service-element:hover .service-element__plane{
+		width: 30px;
+		height: 30px;
+		background-size: cover;
+	}
+
+
+	.about{
+		top: 319%;
+    	height: 100%;
+	}
+
+	.about-company_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.info-company{
+		width: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	
+	}
+
+	.info-company__title{
+		font-size: 26px;
+	}
+
+	.info-company__text{
+		font-size: 14px;
+    	line-height: 20px;
+    	width: 100%;
+	}
+
+	.about-company_right{
+    	height: 48%;
+    	width: 100%;
+    	margin-top: 12%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.stats{
+		width: 77%;
+    	height: 70%;
+    	margin-right: 0%;
+	}
+
+
+	.map{
+		top: 465%;
+    	height: 30%;
+	}
+
+	.footer{
+		height: 35%;
+    	top: 495%;
+		flex-direction: column;
+    	justify-content: space-around;
+    	align-items: baseline;
+	}
+
+}
+
+
+@media only screen and (max-width: 640px) and (min-width: 425px){
+	.header{
+		height: 4%;
+	
+	}
+
+	.languages__content{
+		font-size: 8pt;
+	}
+
+	.header__content{
+		font-size: 8pt;
+	}
+
+	.menu{
+		top: 4%;
+    	align-items: center;
+    	height: 22%;
+    	flex-direction: column;
+	}
+
+	.company{
+		justify-content: space-around;
+    	flex-direction: row;
+    	/* flex-wrap: wrap; */
+    	align-content: flex-start;
+    	/* margin-left: -5%; */
+    	width: 80%;
+	}
+
+	.company__line{
+		height: 40px;
+	}
+
+	.company__img{
+		padding-right: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.menu__label{
+		margin-left: 0%;
+    	font-size: 14px;
+	}
+
+	.points{
+		justify-content: space-around;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	align-content: flex-start;
+    	width: 90%;
+    	
+	}
+
+
+	.main{
+		top: 27%;
+		height: 50%;
+	}
+
+	.transportation-info{
+		width: 80%;
+		
+
+	}
+
+	.eurvans{
+		top: 77%;
+    	height: 90%;
+	}
+
+	.infopanel_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.infopanel_right{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.eurotransportation{
+		float: left;
+    	margin-right: 20%;
+	}
+
+	.transportation-info__title{
+		font-size: 25px;
+	}
+
+	.eurotransportation__title{
+		width: 70%;
+    	font-size: 20px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 12px;
+    	line-height: 18px;
+	}
+
+	.eurotransportation__button{
+		width: 150px;
+    	height: 45px;
+    	font-size: 12px;
+	}
+
+	.truck-gallery{
+		width: 80%;
+    	height: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+    	float: unset;
+	}
+
+	
+	.truck-gallery__picture{
+	    margin-right: 70%;
+    	width: 200px;
+    	height: 91px;
+    	background-size: cover;
+    	padding-bottom: 10%;
+    	margin-left: 0px;
+	}
+
+	.truck-gallery__next{
+		margin-left: 0%;
+		font-size: 14px;
+	}
+
+	.truck-gallery__nextarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.truck-gallery__previousarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.services{
+		top: 180%;
+    	height: 190%;
+    	left: 20%;
+	}
+
+	.services__title{
+		font-size: 24px;
+
+	}
+
+	.service-list {
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	width: 100%;
+    	margin-left: 0%;
+}
+
+	.service-element{
+		width: 70%;
+    	height: 120px;
+	}
+
+	.service-element:hover{
+		width: 70%;
+    	height: 120px;
+	}
+
+	.service-element:hover .service-element__icon{
+		width: 70px;
+		height: 70px;
+	}
+
+	.service-element__plane{
+		width: 30px;
+    	height: 30px;
+    	background-size: cover;
+	}
+
+	.service-element:hover .service-element__plane{
+		width: 30px;
+    	height: 30px;
+    	background-size: cover;
+	}
+
+
+
+	.service-element__text{
+		font-size: 12px;
+	}
+
+
+	.about{
+		top: 373%;
+    	height: 100%;
+	}
+
+	.about-company_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.info-company{
+		width: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	
+	}
+
+	.info-company__title{
+		font-size: 24px;
+	}
+
+	.info-company__text{
+		font-size: 12px;
+    	line-height: 18px;
+    	width: 100%;
+	}
+
+	.about-company_right{
+    	height: 48%;
+    	width: 100%;
+    	margin-top: 12%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.stats{
+		width: 67%;
+    	height: 70%;
+    	margin-right: 0%;
+	}
+
+	.stats-element{
+    	width: 125px;
+    	height: 95px;
+	}
+
+	.stats-element__number{
+		font-size: 30px;
+	}
+
+	.stats-element__pic{
+    	width: 125px;
+    	height: 95px;
+	}
+
+	.map{
+		top: 497%;
+    	height: 30%;
+	}
+
+	.footer{
+		height: 35%;
+    	top: 527%;
+		flex-direction: column;
+    	justify-content: space-around;
+    	align-items: baseline;
+	}
+
+}
+
+/*@media only screen and (max-width: 640px) and (min-width: 425px){
+	.header{
+		height: 4%;
+	
+	}
+
+	.languages__content{
+		font-size: 8pt;
+	}
+
+	.header__content{
+		font-size: 8pt;
+	}
+
+	.menu{
+		top: 4%;
+		height: 22%; 
+	}
+
+	.company{
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+
+	.company__line{
+		display: none;
+	}
+
+	.company__img{
+		padding-right: 1%;
+		margin-left: 5%;
+		margin-right: 7%;
+	}
+
+	.points{
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		margin-right: -10%;
+	}
+
+
+	.main{
+		top: 26%;
+		height: 50%;
+	}
+
+	.transportation-info{
+		width: 80%;
+		
+
+	}
+
+	.eurotransportation{
+		float: left;
+    	margin-right: 20%;
+	}
+
+	.transportation-info__title{
+		font-size: 18px;
+	}
+
+	.eurotransportation__title{
+		width: 70%;
+		font-size: 20px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 10px;
+    	line-height: 12px;
+	}
+
+	.eurotransportation__button{
+		width: 120px;
+    	height: 35px;
+    	font-size: 10px;
+	}
+
+
+	.eurvans{
+		top: 76%;
+		height: 40%;
+	}
+
+	.truck-gallery__picture{
+	    margin-left: -150%;
+    	width: 150px;
+    	height: 91px;
+    	background-size: cover;
+    	padding-bottom: 10%;
+	}
+
+	.truck-gallery__next{
+		margin-left: -55%;
+		font-size: 10px;
+	}
+
+	.truck-gallery__nextarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.truck-gallery__previousarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.services{
+		top: 120%;
+    	height: 50%;
+    	left: 10%;
+	}
+
+	.services__title{
+		font-size: 20px;
+
+	}
+
+	.service-element{
+		width: 24%;
+    	height: 50%;
+	}
+
+	.service-element:hover{
+		width: 24%;
+    	height: 50%;
+	}
+
+	.service-element__text{
+		font-size: 7px;
+	}
+
+
+	.about{
+		top: 175%;
+    	height: 35%;
+	}
+
+	.info-company{
+		margin-right: 10%;
+	}
+
+	.info-company__title{
+		font-size: 15px;
+	}
+
+	.info-company__text{
+		font-size: 8px;
+    	line-height: 10px;
+	}
+
+	.stats{
+		width: 100%;
+    	height: 80%;
+    	margin-right: 25%;
+	}
+
+	.stats-element{
+    	width: 75px;
+    	height: 55px;
+	}
+
+	.stats-element__number{
+		font-size: 22px;
+	}
+
+	.stats-element__maintext{
+		font-size: 10px;
+	}
+
+	.stats-element__sec-text{
+		font-size: 8px;
+	}
+
+	.stats-element__pic{
+    	width: 75px;
+    	height: 55px;
+	}
+
+	.map{
+		top: 214%;
+		height: 20%;
+	}
+
+	.footer{
+		height: 35%;
+		top: 234%;
+		flex-direction: column;
+    	justify-content: space-around;
+    	align-items: baseline;
+	}
+
+}
+*/
+/*@media only screen and (max-width: 425px) and (min-width: 375px){
+	.header{
+		height: 4%;
+	
+	}
+
+	.languages__content{
+		font-size: 8pt;
+	}
+
+	.header__content{
+		font-size: 8pt;
+	}
+
+	.menu{
+		top: 4%;
+		height: 22%; 
+
+	}
+
+	.company{
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+	}
+
+	.company__line{
+		display: none;
+	}
+
+	.company__img{
+		padding-right: 1%;
+		margin-left: 5%;
+		margin-right: 7%;
+	}
+
+	.points{
+		justify-content: space-around;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		margin-right: -10%;
+	}
+
+
+	.main{
+		top: 26%;
+		height: 50%;
+	}
+
+	.transportation-info{
+		width: 80%;
+		
+
+	}
+
+	.eurotransportation{
+		float: left;
+    	margin-right: 20%;
+	}
+
+	.transportation-info__title{
+		font-size: 18px;
+	}
+
+	.eurotransportation__title{
+		width: 70%;
+		font-size: 20px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 10px;
+    	line-height: 12px;
+	}
+
+	.eurotransportation__button{
+		width: 120px;
+    	height: 35px;
+    	font-size: 10px;
+	}
+
+
+	.eurvans{
+		top: 76%;
+		height: 40%;
+	}
+
+	.truck-gallery__picture{
+	    margin-left: -150%;
+    	width: 150px;
+    	height: 91px;
+    	background-size: cover;
+    	padding-bottom: 10%;
+	}
+
+	.truck-gallery__next{
+		margin-left: -55%;
+		font-size: 10px;
+	}
+
+	.truck-gallery__nextarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.truck-gallery__previousarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.services{
+		top: 125%;
+    	height: 60%;
+    	left: 10%;
+	}
+
+	.services__title{
+		font-size: 20px;
+
+	}
+
+	.service-element{
+		width: 130px;
+    	height: 70px;
+	}
+
+	.service-element:hover{
+		width: 130px;
+    	height: 70px;
+	}
+
+	.service-element:hover .service-element__icon{
+		width: 40px;
+		height: 40px;
+	}
+
+	.service-element__plane{
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+
+	.service-element:hover .service-element__plane{
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+
+
+	.about{
+		top: 189%;
+    	height: 35%;
+	}
+
+	.info-company{
+		margin-right: 10%;
+	}
+
+	.info-company__title{
+		font-size: 13px;
+	}
+
+	.info-company__text{
+		font-size: 8px;
+    	line-height: 10px;
+	}
+
+	.stats{
+		width: 100%;
+    	height: 80%;
+    	margin-right: 25%;
+	}
+
+	.stats-element{
+    	width: 65px;
+    	height: 55px;
+	}
+
+	.stats-element__number{
+		font-size: 20px;
+	}
+
+	.stats-element__maintext{
+		font-size: 8px;
+	}
+
+	.stats-element__sec-text{
+		font-size: 6px;
+	}
+
+	.stats-element__pic{
+    	width: 65px;
+    	height: 55px;
+	}
+
+	.map{
+		top: 229%;
+		height: 20%;
+	}
+
+	.footer{
+		height: 35%;
+		top: 249%;
+		flex-direction: column;
+    	justify-content: space-around;
+    	align-items: baseline;
+	}
+
+}*/
+
+@media only screen and (max-width: 425px) and (min-width: 320px){
+	.header{
+		height: 4%;
+	
+	}
+
+	.languages__content{
+		font-size: 8pt;
+	}
+
+	.header__content{
+		font-size: 8pt;
+	}
+
+	.menu{
+		top: 4%;
+    	align-items: center;
+    	height: 22%;
+    	flex-direction: column;
+	}
+
+	.company{
+		justify-content: space-around;
+    	flex-direction: row;
+    	/* flex-wrap: wrap; */
+    	align-content: flex-start;
+    	/* margin-left: -5%; */
+    	width: 90%;
+	}
+
+	.company__line{
+		height: 40px;
+	}
+
+	.company__img{
+		padding-right: 0%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+
+	.menu__label{
+		margin-left: 0%;
+    	font-size: 12px;
+	}
+
+	.points{
+		justify-content: space-around;
+    	flex-direction: row;
+    	flex-wrap: wrap;
+    	align-content: flex-start;
+    	width: 90%;
+    	
+	}
+
+
+	.main{
+		top: 27%;
+		height: 50%;
+	}
+
+	.transportation-info{
+		width: 80%;
+		
+
+	}
+
+	.eurvans{
+		top: 77%;
+    	height: 70%;
+	}
+
+	.infopanel_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.infopanel_right{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-end;
+	}
+
+	.eurotransportation{
+		float: left;
+    	margin-right: 20%;
+	}
+
+	.transportation-info__title{
+		font-size: 18px;
+	}
+
+	.eurotransportation__title{
+		width: 70%;
+    	font-size: 16px;
+
+	}
+
+	.eurotransportation__text{
+		font-size: 12px;
+    	line-height: 14px;
+	}
+
+	.eurotransportation__button{
+		width: 90px;
+    	height: 35px;
+    	font-size: 10px;
+	}
+
+	.truck-gallery{
+		width: 80%;
+    	height: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+    	float: unset;
+	}
+
+	
+	.truck-gallery__picture{
+	    margin-right: 70%;
+    	width: 130px;
+    	height: 71px;
+    	background-size: cover;
+    	padding-bottom: 10%;
+    	margin-left: 0px;
+	}
+
+	.truck-gallery__next{
+		margin-left: 0%;
+		font-size: 12px;
+	}
+
+	.truck-gallery__nextarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.truck-gallery__previousarrow{
+		margin-top: -13px;
+		font-size: 30px;
+	}
+
+	.services{
+		top: 152%;
+    	height: 140%;
+    	left: 20%;
+	}
+
+	.services__title{
+		font-size: 20px;
+
+	}
+
+	.service-list {
+    	display: flex;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	width: 100%;
+    	margin-left: 0%;
+}
+
+	.service-element{
+		width: 80%;
+    	height: 90px;
+	}
+
+	.service-element:hover{
+		width: 80%;
+    	height: 90px;
+	}
+
+	.service-element:hover .service-element__icon{
+		width: 40px;
+		height: 40px;
+	}
+
+	.service-element__plane{
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+
+	.service-element:hover .service-element__plane{
+		width: 20px;
+		height: 20px;
+		background-size: cover;
+	}
+
+
+
+	.service-element__text{
+		font-size: 10px;
+	}
+
+
+	.about{
+		top: 303%;
+    	height: 100%;
+	}
+
+	.about-company_left{
+    	height: 50%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.info-company{
+		width: 70%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: flex-start;
+    	
+	}
+
+	.info-company__title{
+		font-size: 14px;
+	}
+
+	.info-company__text{
+		font-size: 12px;
+    	line-height: 14px;
+    	width: 100%;
+	}
+
+	.about-company_right{
+    	height: 48%;
+    	width: 100%;
+    	margin-top: 12%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: space-around;
+    	align-items: center;
+	}
+
+	.stats{
+		width: 67%;
+    	height: 70%;
+    	margin-right: 0%;
+	}
+
+	.stats-element{
+    	width: 105px;
+    	height: 75px;
+	}
+
+	.stats-element__number{
+		font-size: 24px;
+	}
+
+	.stats-element__maintext{
+		font-size: 10px;
+	}
+
+	.stats-element__sec-text{
+		font-size: 7px;
+	}
+
+	.stats-element__pic{
+    	width: 105px;
+    	height: 75px;
+	}
+
+	.map{
+		top: 412%;
+    	height: 20%;
+	}
+
+	.footer{
+		height: 35%;
+    	top: 432%;
+		flex-direction: column;
+    	justify-content: space-around;
+    	align-items: baseline;
+	}
+
+}
+
+
